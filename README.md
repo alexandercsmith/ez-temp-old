@@ -4,6 +4,7 @@
 
 EZDB is an easy to integrate and use for any Node.js Project to manage AWS DynamoDB Tables.
 
+**IN DEVELOPMENT**
 
 ## Installation
 ```bash
