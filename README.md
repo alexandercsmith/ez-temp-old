@@ -2,7 +2,7 @@
 
 > EZ "Easy" DB
 
-EZDB is an easy to integrate and use for any Node.js Project.
+EZDB is an easy to integrate and use for any Node.js Project to manage AWS DynamoDB Tables.
 
 
 ## Installation
