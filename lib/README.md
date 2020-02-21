@@ -2,127 +2,130 @@
 
 > EZ "Easy" DB
 
+EZDB creates an easy to use and operate API and CLI for AWS DynamoDB management and transactions.
+
 ---
 
-## Action
-Execute Command Line EZDB Action
-```bash
-$ ezdb action [OPTIONS]
-```
 
 ## Backup
 List Backups
-```js
-```
+  * API: `EZ.Backup.list()`
+  * CLI: `$ ezdb Backup --list <options>`
+
 Create Backup
-```js
-```
+  * API: `EZ.Backup.create()`
+  * CLI: `$ ezdb Backup --create <options>`
+
 Describe Backup
-```js
-```
+  * API: `EZ.Backup.describe()`
+  * CLI: `$ ezdb Backup --describe <options>`
+
 Delete Backup
-```js
-```
+  * API: `EZ.Backup.delete()`
+  * CLI: `$ ezdb Backup --delete <options>`
+
 
 ## Batch
 Batch Get Item
-```js
-```
+  * API: `EZ.Batch.get()`
+  * CLI: `$ ezdb Batch --get <options>`
+
 Batch Write Item
-```js
-```
+  * API: `EZ.Batch.write()`
+  * CLI: `$ ezdb Batch --write <options>`
 
-## Client
-Initialize EZDB Client Interface
-```js
-const EZDB = require('ezdb');
-
-const options = { ...dbOptions };
-
-const EZ = new EZDB.Client(options);
-```
-
-## Config
-
-## Editor
-Begin Query Session
-```bash
-$ ezdb editor [OPTIONS]
-```
 
 ## Global
 List Global Tables
-```js
-```
+  * API: `EZ.Global.list()`
+  * CLI: `$ ezdb Global --list <options>`
+
 Create Global Table
-```js
-```
+  * API: `EZ.Global.create()`
+  * CLI: `$ ezdb Global --create <options>`
+
 Describe Global Table
-```js
-```
+  * API: `EZ.Global.describe()`
+  * CLI: `$ ezdb Global --describe <options>`
+
 Update Global Table
-```js
-```
+  * API: `EZ.Global.update()`
+  * CLI: `$ ezdb Global --update <options>`
+
 
 ## Item
 Get Item
-```js
-```
-Create Item
-```js
-```
-Update Item
-```js
-```
-Delete Item
-```js
-```
+  * API: `EZ.Item.get()`
+  * CLI: `$ ezdb Item --get <options>`
 
-## Schema
-```js
-```
+Create Item
+  * API: `EZ.Item.create()`
+  * CLI: `$ ezdb Item --create <options>`
+
+Update Item
+  * API: `EZ.Item.update()`
+  * CLI: `$ ezdb Item --update <options>`
+
+Delete Item
+  * API: `EZ.Item.delete()`
+  * CLI: `$ ezdb Item --delete <options>`
+
 
 ## Table
 List Tables
-```js
-```
+  * API: `EZ.Table.list()`
+  * CLI: `$ ezdb Table --list <options>`
+
 Create Table
-```js
-```
+  * API: `EZ.Table.create()`
+  * CLI: `$ ezdb Table --create <options>`
+
 Describe Table
-```js
-```
+  * API: `EZ.Table.describe()`
+  * CLI: `$ ezdb Table --describe <options>`
+
 Update Table
-```js
-```
+  * API: `EZ.Table.update()`
+  * CLI: `$ ezdb Table --update <options>`
+
 Delete Table
-```js
-```
+  * API: `EZ.Table.delete()`
+  * CLI: `$ ezdb Table --delete <options>`
+
 Query Table
-```js
-```
+  * API: `EZ.Table.query()`
+  * CLI: `$ ezdb Table --query <options>`
+
 Restore Table
-```js
-```
+  * API: `EZ.Table.restore()`
+  * CLI: `$ ezdb Table --restore <options>`
+
 Scan Table
-```js
-```
+  * API: `EZ.Table.scan()`
+  * CLI: `$ ezdb Table --scan <options>`
+
+
 
 ## Tag
 List Tags associated with Resource
-```js
-```
+  * API: `EZ.Tag.list()`
+  * CLI: `$ ezdb Tag --list <options>`
+
 Tag Resource
-```js
-```
+  * API: `EZ.Tag.add()`
+  * CLI: `$ ezdb Tag --tag <options>`
+
 Untag Resource
-```js
-```
+  * API: `EZ.Tag.remove()`
+  * CLI: `$ ezdb Tag --untag <options>`
+
+
 
 ## Transact
 Transact Get Item
-```js
-```
+  * API: `EZ.Transact.get()`
+  * CLI: `$ ezdb Transact --get <options>`
+
 Transact Write Item
-```js
-```
+  * API: `EZ.Transact.write()`
+  * CLI: `$ ezdb Transact --write <options>`

@@ -1,1 +1,0 @@
-// Global Table API Test
