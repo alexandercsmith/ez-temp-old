@@ -27,9 +27,9 @@ $ npm test
 Load Source into Project and Configure AWS Profile
 ```js
 // ES5
-const EZ = require('ezdb');
+const EZDB = require('ezdb');
 // ES6
-import EZ from 'ezdb';
+import EZDB from 'ezdb';
 
 // Initialize
 const config = {
@@ -39,7 +39,7 @@ const config = {
   apiVersion: '2012-08-10', // Optional
 };
 
-const db = new EZ.Client(config);
+const EZ = new EZ.Client(config);
 ```
 Options:
 * AWS Access Key Id
