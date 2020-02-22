@@ -6,12 +6,15 @@ EZDB is an easy to integrate and use for any Node.js Project to manage AWS Dynam
 
 **IN DEVELOPMENT**
 
+---
+
 ## Installation
 ```bash
 # NPM
 $ npm install ezdb
 ```
 
+---
 
 ## Testing
 ```bash
@@ -22,6 +25,7 @@ $ npm install
 $ npm test
 ```
 
+---
 
 ## Configuration
 Load Source into Project and Configure AWS Profile
@@ -47,6 +51,7 @@ Options:
 * API Version [Optional] [Default: 2012-08-10]
 * AWS Region [Optional] [Default: us-east-1]
 
+---
 
 ## CLI
 Execute API Actions from the Console
@@ -56,6 +61,8 @@ $ ezdb [Action] [Method] [Options]
 * Action: API Action
 * Method: Action Method to Execute
 * Options: JSON Object of Options & Attributes
+
+---
 
 ## API
 
