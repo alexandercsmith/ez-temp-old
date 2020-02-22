@@ -36,10 +36,9 @@ module.exports = {
     accessKeyId: 'xxx',
     secretKeyId: 'xxx',
     region: 'us-east-1',
-    apiVersion: '2012-08-10'
-  },
-  tables: [],
-  globals: []
+    apiVersion: '2012-08-10',
+    settings: {}
+  }
 };
 ```
 Required:
@@ -59,10 +58,12 @@ const config = {
 const EZ = new EZDB.Client(config);
 ```
 Options:
-* AWS Access Key Id
-* AWS Secret Access Key
-* API Version [Optional] [Default: 2012-08-10]
-* AWS Region [Optional] [Default: us-east-1]
+* `accessKeyId` : AWS Access Key Id
+* `secretKeyId` : AWS Secret Access Key
+* `apiVersion` : API Version [Optional] [Default: 2012-08-10]
+* `region` : AWS Region [Optional] [Default: us-east-1]
+* `settings` : Settings [Object]:
+  *
 
 ---
 
@@ -84,9 +85,7 @@ $ ezdb [Action] [Method] [Options]
 const EZDB = require('ezdb');
 const config = {
   accessKeyId: 'xxx',
-  secretAccessKey: 'xxx',
-  region: 'us-east-1',
-  apiVersion: '2012-08-10'
+  secretAccessKey: 'xxx'
 };
 const EZ = new EZDB.Client(config);
 ```
@@ -95,102 +94,162 @@ const EZ = new EZDB.Client(config);
 * List Tables
   * **API**: `EZ.Table.list(options)`
   * **CLI**: `$ ezdb Table --list <options>`
+  * **Options**:
+    *
 * Create Table
   * **API**: `EZ.Table.create(options)`
   * **CLI**: `$ ezdb Table --create <options>`
+  * **Options**:
+    *
 * Describe Table
   * **API**: `EZ.Table.describe(options)`
   * **CLI**: `$ ezdb Table --describe <options>`
+  * **Options**:
+    *
 * Update Table
   * **API**: `EZ.Table.update(options)`
   * **CLI**: `$ ezdb Table --update <options>`
+  * **Options**:
+    *
 * Delete Table
   * **API**: `EZ.Table.delete(options)`
   * **CLI**: `$ ezdb Table --delete <options>`
+  * **Options**:
+    *
 * Query Table
   * **API**: `EZ.Table.query(options)`
   * **CLI**: `$ ezdb Table --query <options>`
+  * **Options**:
+    *
 * Scan Table
   * **API**: `EZ.Table.scan(options)`
   * **CLI**: `$ ezdb Table --scan <options>`
+  * **Options**:
+    *
 * Restore Table
   * **API**: `EZ.Table.restore(options)`
   * **CLI**: `$ ezdb Table --restore <options>`
+  * **Options**:
+    *
 * Describe Table Time to Live
   * **API**: `EZ.Table.describeTTL(options)`
   * **CLI**: `$ ezdb Table --describeTTL <options>`
+  * **Options**:
+    *
 * Update Table Time to Live
   * **API**: `EZ.Table.updateTTL(options)`
   * **CLI**: `$ ezdb Table --updateTTL <options>`
+  * **Options**:
+    *
 
 ### Items
 * Get Item
   * **API**: `EZ.Item.get(options)`
   * **CLI**: `$ ezdb Item --get <options>`
+  * **Options**:
+    *
 * Create Item
   * **API**: `EZ.Item.create(options)`
   * **CLI**: `$ ezdb Item --create <options>`
+  * **Options**:
+    *
 * Update Item
   * **API**: `EZ.Item.update(options)`
   * **CLI**: `$ ezdb Item --update <options>`
+  * **Options**:
+    *
 * Delete Item
   * **API**: `EZ.Item.delete(options)`
   * **CLI**: `$ ezdb Item --delete <options>`
+  * **Options**:
+    *
 
 ### Global Tables
 * List Global Tables
   * **API**: `EZ.Global.list(options)`
   * **CLI**: `$ ezdb Global --list <options>`
+  * **Options**:
+    *
 * Create Global Table
   * **API**: `EZ.Global.create(options)`
   * **CLI**: `$ ezdb Global --create <options>`
+  * **Options**:
+    *
 * Describe Global Table
   * **API**: `EZ.Global.describe(options)`
   * **CLI**: `$ ezdb Global --describe <options>`
+  * **Options**:
+    *
 * Update Global Table
   * **API**: `EZ.Global.update(options)`
   * **CLI**: `$ ezdb Global --update <options>`
+  * **Options**:
+    *
 * Update Global Table Settings
   * **API**: `EZ.Global.settings(options)`
   * **CLI**: `$ ezdb Global --settings <options>`
+  * **Options**:
+    *
 
 ### Batchs
 * Batch Get Items
   * **API**: `EZ.Batch.get(options)`
   * **CLI**: `$ ezdb Batch --get <options>`
+  * **Options**:
+    *
 * Batch Write Items
   * **API**: `EZ.Batch.write(options)`
   * **CLI**: `$ ezdb Batch --write <options>`
+  * **Options**:
+    *
 
 ### Transactions
 * Transact Get Items
   * **API**: `EZ.Transact.get(options)`
   * **CLI**: `$ ezdb Transact --get <options>`
+  * **Options**:
+    *
 * Transact Write Items
   * **API**: `EZ.Transact.write(options)`
   * **CLI**: `$ ezdb Transact --write <options>`
+  * **Options**:
+    *
 
 ### Backups
 * List Backups
   * **API**: `EZ.Backup.list(options)`
   * **CLI**: `$ ezdb Backup --list <options>`
+  * **Options**:
+    *
 * Create Backup
   * **API**: `EZ.Backup.create(options)`
   * **CLI**: `$ ezdb Backup --create <options>`
+  * **Options**:
+    *
 * Describe Backup
   * **API**: `EZ.Backup.describe(options)`
   * **CLI**: `$ ezdb Backup --describe <options>`
+  * **Options**:
+    *
 * Delete Backup
   * **API**: `EZ.Backup.delete(options)`
   * **CLI**: `$ ezdb Backup --delete <options>`
+  * **Options**:
+    *
 
 ### Tags
 * List Tags
   * **API**: `EZ.Tag.list(options)`
   * **CLI**: `$ ezdb Tag --list <options>`
+  * **Options**:
+    *
 * Add Tag
   * **API**: `EZ.Tag.add(options)`
   * **CLI**: `$ ezdb Tag --add <options>`
+  * **Options**:
+    *
 * Remove Tag
   * **API**: `EZ.Tag.remove(options)`
   * **CLI**: `$ ezdb Tag --remove <options>`
+  * **Options**:
+    *
