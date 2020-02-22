@@ -27,22 +27,16 @@ $ npm test
 
 ---
 
-## Configuration
-Load Source into Project and Configure AWS Profile
+## Usage
+Initialize EZDB into Project and Configure AWS Profile
 ```js
-// ES5
 const EZDB = require('ezdb');
-// ES6
-import EZDB from 'ezdb';
-
-// Initialize
 const config = {
   accessKeyId: 'xxx',
   secretAccessKey: 'xxx',
   region: 'us-east-1', // Optional
   apiVersion: '2012-08-10', // Optional
 };
-
 const EZ = new EZDB.Client(config);
 ```
 Options:
@@ -137,9 +131,9 @@ const EZ = new EZDB.Client(config);
 * Update Global Table
   * **API**: `EZ.Global.update()`
   * **CLI**: `$ ezdb Global --update`
-  * Update Global Table Settings
-    * **API**: `EZ.Global.settings()`
-    * **CLI**: `$ ezdb Global --settings`
+* Update Global Table Settings
+  * **API**: `EZ.Global.settings()`
+  * **CLI**: `$ ezdb Global --settings`
 
 ### Batchs
 * Batch Get Items
